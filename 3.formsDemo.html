@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+</head>
+
+<body>
+    <h1>Login form</h1>
+    <form action="/search">
+        <p>
+            <label for="usrid">Enter username : </label>
+            <input type="text" placeholder="username" id="usrid" name="name">
+        </p>
+
+        <p>
+            <label for="passid">enter Password</label>
+            <input type="password" placeholder="password" id="passid" name="pass">
+        </p>
+
+        <p>
+            <label for="coloid">choose a color</label>
+            <input type="color" id="coloid" name="color">
+        </p>
+
+        <p>
+            <label for="numid">Choose a number</label>
+            <input type="number" placeholder="enter a number" id="numid" name="num">
+        </p>
+
+        <button type="button">click me</button> <br>
+        <button>submit</button>
+    </form>
+
+    <hr>
+    <form action="https://www.google.de/search">
+        <input type="text" name="q" placeholder="search on google">
+        <button>search google</button>
+    </form>
+
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query" placeholder="search on youtube">
+        <button>search youtube</button>
+    </form>
+
+    <h1>More Inputs</h1>
+    <form action="/search">
+        <input type="checkbox" name="tos" id="agreeid">
+        <label for="agreeid">I agree all terms and conditions</label>
+        
+        <p>
+            <input type="radio" name="gender" id="l" value="m">
+            <label for="m">Male</label>
+
+            <input type="radio" name="gender" id="f" value="f">
+            <label for="f">Female</label>
+
+            <input type="radio" name="gender" id="un" value="un">
+            <label for="un">Unkown</label>
+        </p>
+
+        <p>
+            <label for="">Please select Meal</label>
+            <select name="item" id="meal">
+                <option value="veg">Veg</option>
+                <option value="nonveg" selected>NonVeg</option>
+                <option value="fish">Fish</option>
+            </select>
+        </p>
+        <p>
+            <label for="mood">Mood: bad</label>
+            <input type="range" name="moodlevel" id="mood" min="1" max="10" step="2">
+            <label for="mood">Goood</label>
+        </p>
+        <p>
+            <label for="comment">Write a comment :</label>
+        </p>
+        <p>
+            <textarea name="comment" id="comment" cols="30" rows="5" placeholder="Write something"></textarea>
+        </p>
+            
+        <button>submit</button>
+    </form>
+
+</body>
+
+</html>
